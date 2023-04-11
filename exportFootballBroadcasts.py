@@ -13,7 +13,7 @@ url = 'https://www.uol.com.br/esporte/futebol/central-de-jogos/'
 page = driver.get(url)
 html = driver.page_source
 driver.quit()
-soup = BeautifulSoup(html, 'lxml')
+soup = BeautifulSoup(html, 'html.parser')
 
 matches_tag = soup.find_all("div", {"class": "match-wrapper"})
 
