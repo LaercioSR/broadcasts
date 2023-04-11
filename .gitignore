@@ -1,5 +1,5 @@
-exports/*
-!exports/.gitkeep
+assets/exports/*
+!assets/exports/.gitkeep
 
 ################# Python Ignore #################
 # Byte-compiled / optimized / DLL files

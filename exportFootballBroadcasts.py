@@ -40,5 +40,5 @@ for match_tag in matches_tag:
 
     matches.append(match)
 
-with open("exports/football.json", "w") as outfile:
+with open("assets/exports/football.json", "w") as outfile:
     json.dump(matches, outfile, indent=2, ensure_ascii=False)
