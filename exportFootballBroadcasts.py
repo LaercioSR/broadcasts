@@ -1,11 +1,11 @@
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 
-options = Options()
-options.add_argument('-headless')
-driver = webdriver.Firefox(options=options)
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options)
 
 matches = []
 
