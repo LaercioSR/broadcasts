@@ -1,6 +1,8 @@
 assets/exports/*
 !assets/exports/.gitkeep
 
+.vscode
+
 ################# Python Ignore #################
 # Byte-compiled / optimized / DLL files
 __pycache__/

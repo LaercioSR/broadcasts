@@ -36,7 +36,11 @@ for match_tag in matches_tag:
     transmissions_tag = match_tag.find("div", {"class": "transmitions"})
     if transmissions_tag:
         for transmition in transmissions_tag.find_all("a"):
-            match["transmissions"].append(transmition.get_text().strip())
+            transmition_channel = transmition.get_text()
+            if (")" in transmition_channel and "(" not in transmition_channel):
+                continue
+            match["transmissions"].append(
+                transmition_channel.split("(")[0].strip())
 
     matches.append(match)
 
